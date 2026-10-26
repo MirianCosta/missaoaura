@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR" dir="ltr">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Missão Aura </title>
+  <link rel="stylesheet" href="css/style.css">
+ </head>
+ <body>
+  <h1>MISSÃO</h1>
+    <div class="missao">
+      <h3>Personagem da Missão</h3>
+      <h5>Imagine que você acordou em 2089, nesta época a humanidade descobriu a magia e outras criaturas.<br>
+           Foram enviados 4 tripulantes para uma missão de exploração em um planeta desconhecido.<br> 
+         Neste momento você poderá descobrir o personagem que se relacona melhor com a sua personalidade.</h5>
+  <form name="cadastro" id="cadastro" action="index.html" method="get">
+    <legend>Descubra seu personagem!</legend>
+    <label for="nome">Nome</label>
+    <input type="text" name="nome" id="nome" value="" placeholder="digite seu nome"><br>
+    <label for="data">Data de Nascimento</label>
+    <input type="date" name="data" id="data" value="" required><br>
+    <p>Qual é a sua maior qualidade?</p>
+      <input type="radio" id="Inteligência" name="qualidade" value="bruxa">
+      <label for="Inteligência">Inteligência</label><br>
+      <input type="radio" id="Coragem" name="qualidade" value="soldado">
+      <label for="Coragem">Coragem</label><br>
+      <input type="radio" id="Liderança" name="qualidade" value="rainha">
+      <label for="Liderança">Liderança</label><br>
+      <input type="radio" id="Racionalidade" name="qualidade" value="guerreiro">
+      <label for="Racionalidade">Racionalidade</label><br>
+    <p>Se você pudesse ser um ser mágico qual seria?</p>
+      <input type="radio" id="Uma serpente alada." name="serMagico" value="bruxa">
+      <label for="Uma serpente alada.">Uma serpente alada.</label><br>
+      <input type="radio" id="N" name="serMagico" value="soldado">
+      <label for="Não gostaria de ser um ser mágico.">Não gostaria de ser um ser mágico.</label><br>
+      <input type="radio" id="FF" name="serMagico" value="rainha">
+      <label for="FF">Uma feérica que controla o fogo.</label><br>
+      <input type="radio" id="FG" name="serMagico" value="guerreiro">
+      <label for="FG">Um feérico que pode se transformar em uma ave.</label><br>
+     <p>Qual seria seu defeito mortal?</p>
+      <input type="radio" id="Ambição" name="defeito" value="bruxa">
+      <label for="Ambição">Ambição</label><br>
+      <input type="radio" id="Infantilidade" name="defeito" value="soldado">
+      <label for="Infantilidade">Infantilidade</label><br>
+      <input type="radio" id="Teimosia" name="defeito" value="rainha">
+      <label for="Teimosia">Teimosia</label><br>
+      <input type="radio" id="Isolar-se" name="defeito" value="guerreiro">
+      <label for="Isolar-se">Isolar-se</label><br>
+     <p>Em uma guerra o que você faria?</p>
+      <input type="radio" id="LL" name="guerra" value="bruxa">
+      <label for="LL">Lutaria com o lado que acreditasse ser certo mesmo que perdesse um grande privilégio.</label><br>
+      <input type="radio" id="LV" name="guerra" value="soldado">
+      <label for="LV">Lutaria até vencer mesmo se não pudesse mais lutar.</label><br>
+      <input type="radio" id="VM" name="guerra" value="rainha">
+      <label for="VM">Arriscaria sua vida para salvar o mundo.</label><br>
+      <input type="radio" id="NR" name="guerra" value="guerreiro">
+      <label for="NR">Não deixaria uma pessoa correr um grande risco, mas lutaria na linha de frente.</label><br>
+    <button type="submit" name="cadastrar" id="cadastrar" value="Descubra seu perfil!">Descubra seu perfil!</button>
+   </form>
+   <div id="resultado" class="resultado" style="display: none;">
+   <div id="perfil"></div>
+
+    <button type="button" id="refazerteste" class="refazer">Refazer o Teste.
+    </button>
+   </div>
+   <class="imagem-fundo"></div>
+  <script src="script.js"></script>
+ </body>
+</html>
